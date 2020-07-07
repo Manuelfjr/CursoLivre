@@ -22,7 +22,9 @@ Code: script em .R das ativiades respectivas ao modulo
 ## [Curso I](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01)
 
 ### [Modulo I](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/Modulo%20I)
-**[Code](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/Modulo%20II/code)**
+**[Code](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/Modulo%20I/code)**
+
+**[Data](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/Modulo%20I/data)**
 
 **[Libs](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/Modulo%20I/libs)**
 
