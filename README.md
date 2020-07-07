@@ -1,3 +1,6 @@
+---
+author: Manuel Ferreira Junior
+---
 # Curso Livre
 Organizado da seguinte forma:
 
