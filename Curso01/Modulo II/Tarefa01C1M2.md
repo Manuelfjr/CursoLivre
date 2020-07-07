@@ -78,7 +78,7 @@ Total           30     100
 > # Será retornado logo apos rodar as linhas acima, o grafico.
 ~~~
 
-![1](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q03C1M2.png?token=AMXPQQOK7PEPUYF5EPKNKMK7ASRFY)
+![1](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q03C1M2.png?token=AMXPQQJSHQBBERVDPPVMJIK7ASTEC)
 
 **Analise :**
 ~~~
@@ -94,7 +94,7 @@ Perceba que, o número de ativos é superior ao número de demitido dentro da li
 > legend(1,1,levels(situacao),col=palette(),pch = rep(20,2))
 > title('Grafico de setores da variavel situacao')
 ~~~
-![2](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q04C1M2.png?token=AMXPQQI5FYXPWPMY2EZCLXC7ASRH2)
+![2](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q04C1M2.png?token=AMXPQQMBR6R6DTKHUDV3KV27ASTC2)
 
 **Analise :**
 ~~~
@@ -144,7 +144,7 @@ Note que a maioria dos trabalhos daqueles trabalhadores são de idades maiores, 
 > title('Boxplot da situacao atual do empregado por salario')
 > grid()
 ~~~
-![3](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q07C1M2.png?token=AMXPQQPM27FVFICAZPBZADK7ASRJ6)
+![3](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q07C1M2.png?token=AMXPQQNXMFQBNBI3HPENPIS7ASTA4)
 
 **Analise :**
 ~~~
@@ -164,7 +164,7 @@ Perceba que a média para o salário dos empregados que possuem situação ativa
 ~~~
 Note que a relação entre as variáveis salário e idade aparentam ser linearmente dependentes, ao calcular-se uma correlação entre as variáveis obtendo um valor aproximado de 0.9629, aparentemente alta. Perceba que este fato se faz real, ao analisarmos o gráfico,podemos notar que ao aumentar a idade dos empregados dessa linha de montagem, também aumenta o valor do salarial recebido anualmente, da mesma forma, a medida que um salário aumenta, a idade também será maior.
 ~~~
-![4](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q08C1M2.png?token=AMXPQQJYLCL4WM3NFUN7SRK7ASRNC)
+![4](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q08C1M2.png?token=AMXPQQN3T5QJYEMJ2XGWHCS7ASTAA)
 
 ### **9) Construa um histograma para a variável salario e insira a curva gaussiana.**
 **Código :**
@@ -182,7 +182,7 @@ Note que a relação entre as variáveis salário e idade aparentam ser linearme
 ~~~
 Note que a curva gaussiana não se ajusta muito bem para os dados. Percebe que a maioria dos salarios são entr 40000 45000 dólares anuais, e entre 20000 e 25000 dólares anuais, como ja afirmado em alternativas anteriores. 
 ~~~
-![5](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/images/Q09C1M2.png?token=AMXPQQLRBFVBNSGC5QZTPM27ASRQA)
+![5](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q09C1M2.png?token=AMXPQQIJOGGRWHRVP5UYUW27ASS6C)
 
 ### **10) Construa um histograma para a variável idade e insira a curva gaussiana.**
 **Código :**
@@ -194,7 +194,7 @@ Note que a curva gaussiana não se ajusta muito bem para os dados. Percebe que a
 > curve(dnorm(x,mean = mean(idade),sd = sd(idade)),add = T)
 > grid()
 ~~~
-![6](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q10C1M2.png?token=AMXPQQPYHTUBOCAYTTGX3KK7ASRRY)
+![6](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q10C1M2.png?token=AMXPQQIGFBJ6CDAGFKVLB7K7ASS4I)
 
 **Analise :**
 ~~~
