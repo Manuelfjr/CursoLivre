@@ -1,5 +1,7 @@
 ---
+title: Curso Livre
 author: Manuel Ferreira Junior
+email: manuel.ferreira@estudantes.ufpb.br
 ---
 # Curso Livre
 Organizado da seguinte forma:
