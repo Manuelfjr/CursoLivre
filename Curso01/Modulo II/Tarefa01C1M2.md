@@ -78,6 +78,8 @@ Total           30     100
 > # Será retornado logo apos rodar as linhas acima, o grafico.
 ~~~
 
+![1](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q03C1M2.png?token=AMXPQQOK7PEPUYF5EPKNKMK7ASRFY)
+
 **Analise :**
 ~~~
 Perceba que, o número de ativos é superior ao número de demitido dentro da linha de montagem.
@@ -92,6 +94,8 @@ Perceba que, o número de ativos é superior ao número de demitido dentro da li
 > legend(1,1,levels(situacao),col=palette(),pch = rep(20,2))
 > title('Grafico de setores da variavel situacao')
 ~~~
+![2](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q04C1M2.png?token=AMXPQQI5FYXPWPMY2EZCLXC7ASRH2)
+
 **Analise :**
 ~~~
 Note que o gráfico de setores traz as mesmas informações das alternativas anteriores (2 e 3), ou seja, a informação de que a maioria de trabalhadores em uma determinada linha de montagem possuí a situação ativa.
@@ -140,6 +144,8 @@ Note que a maioria dos trabalhos daqueles trabalhadores são de idades maiores, 
 > title('Boxplot da situacao atual do empregado por salario')
 > grid()
 ~~~
+![3](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q07C1M2.png?token=AMXPQQPM27FVFICAZPBZADK7ASRJ6)
+
 **Analise :**
 ~~~
 Perceba que a média para o salário dos empregados que possuem situação ativa esta em torno de 25000 e 27000 dólares anualmente, enquanto para os que possuem o estado "demitido", a mediana salarial anual é em torno de 40000 e 45000 dólares anual, valor bem superior aos que possuem situação ativa. Note também que o boxplot mostra um outlier salarial para a situação demitido naquela linha de montagem, sendo de algo proximo de 30000 dólares anual.
@@ -158,6 +164,7 @@ Perceba que a média para o salário dos empregados que possuem situação ativa
 ~~~
 Note que a relação entre as variáveis salário e idade aparentam ser linearmente dependentes, ao calcular-se uma correlação entre as variáveis obtendo um valor aproximado de 0.9629, aparentemente alta. Perceba que este fato se faz real, ao analisarmos o gráfico,podemos notar que ao aumentar a idade dos empregados dessa linha de montagem, também aumenta o valor do salarial recebido anualmente, da mesma forma, a medida que um salário aumenta, a idade também será maior.
 ~~~
+![4](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q08C1M2.png?token=AMXPQQJYLCL4WM3NFUN7SRK7ASRNC)
 
 ### **9) Construa um histograma para a variável salario e insira a curva gaussiana.**
 **Código :**
@@ -175,6 +182,7 @@ Note que a relação entre as variáveis salário e idade aparentam ser linearme
 ~~~
 Note que a curva gaussiana não se ajusta muito bem para os dados. Percebe que a maioria dos salarios são entr 40000 45000 dólares anuais, e entre 20000 e 25000 dólares anuais, como ja afirmado em alternativas anteriores. 
 ~~~
+![5](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/images/Q09C1M2.png?token=AMXPQQLRBFVBNSGC5QZTPM27ASRQA)
 
 ### **10) Construa um histograma para a variável idade e insira a curva gaussiana.**
 **Código :**
@@ -186,6 +194,8 @@ Note que a curva gaussiana não se ajusta muito bem para os dados. Percebe que a
 > curve(dnorm(x,mean = mean(idade),sd = sd(idade)),add = T)
 > grid()
 ~~~
+![6](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q10C1M2.png?token=AMXPQQPYHTUBOCAYTTGX3KK7ASRRY)
+
 **Analise :**
 ~~~
 Note que a maioria dos trabalhadores que exercem função naquela linha de montagem, ou possuemidade inferior a 30 anos ou superior a 40 anos, sendo sua menoria concentrada na faixa de 30 a 40 anos de idade.
