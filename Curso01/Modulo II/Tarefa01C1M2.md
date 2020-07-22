@@ -160,11 +160,12 @@ Perceba que a média para o salário dos empregados que possuem situação ativa
 > cor(salario,idade)
 [1] 0.9629456
 ~~~
+![4](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q08C1M2.png?token=AMXPQQN3T5QJYEMJ2XGWHCS7ASTAA)
+
 **Analise :**
 ~~~
 Note que a relação entre as variáveis salário e idade aparentam ser linearmente dependentes, ao calcular-se uma correlação entre as variáveis obtendo um valor aproximado de 0.9629, aparentemente alta. Perceba que este fato se faz real, ao analisarmos o gráfico,podemos notar que ao aumentar a idade dos empregados dessa linha de montagem, também aumenta o valor do salarial recebido anualmente, da mesma forma, a medida que um salário aumenta, a idade também será maior.
 ~~~
-![4](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q08C1M2.png?token=AMXPQQN3T5QJYEMJ2XGWHCS7ASTAA)
 
 ### **9) Construa um histograma para a variável salario e insira a curva gaussiana.**
 **Código :**
@@ -178,11 +179,12 @@ Note que a relação entre as variáveis salário e idade aparentam ser linearme
 +       add = T)
 > grid()
 ~~~
+![5](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q09C1M2.png?token=AMXPQQIJOGGRWHRVP5UYUW27ASS6C)
+
 **Analise :**
 ~~~
 Note que a curva gaussiana não se ajusta muito bem para os dados. Percebe que a maioria dos salarios são entr 40000 45000 dólares anuais, e entre 20000 e 25000 dólares anuais, como ja afirmado em alternativas anteriores. 
 ~~~
-![5](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso01/imagens/Q09C1M2.png?token=AMXPQQIJOGGRWHRVP5UYUW27ASS6C)
 
 ### **10) Construa um histograma para a variável idade e insira a curva gaussiana.**
 **Código :**
