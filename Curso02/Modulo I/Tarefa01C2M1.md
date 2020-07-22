@@ -9,6 +9,8 @@ date: 'Julho, 22'
 
 # Modulo I
 
+
+
 ## **Tarefa 01**
 
 Pacote necessário
@@ -16,13 +18,9 @@ Pacote necessário
 install.packages('TeachingDemos')
 library(TeachingDemos)
 ~~~
-### Questão 01:
+### **Questão 01:**
 
-$\alpha = 0.05$ 
-
-$H_{0}: \mu \le 42$
-
-$H_{1}: \mu > 42$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \mu \le 42 \\ H_{1}: \mu > 42" title="\large 1" />
 
 **Código :**
 ~~~r
@@ -56,13 +54,9 @@ mean of x
 
 ~~~
 
-### Questão 02:
+### **Questão 02:**
 
-$\alpha = 0.10$ 
-
-$H_{0}: \mu \ge 1200$
-
-$H_{1}: \mu < 1200$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.10 \\ H_{0}: \mu \ge 1200 \\ H_{1}: \mu < 1200" title="\large 2" />
 
 **Código :**
 ~~~r
@@ -81,13 +75,9 @@ $H_{1}: \mu < 1200$
 
 ~~~
 
-### Questão 03:
+### **Questão 03:**
 
-$\alpha = 0.05$ 
-
-$H_{0}: \mu \ge 5$
-
-$H_{1}: \mu < 5$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \mu \ge 5\\ H_{1}: \mu < 5" title="\large 3" />
 
 **Código :**
 ~~~r
@@ -107,13 +97,9 @@ $H_{1}: \mu < 5$
 
 ~~~
 
-### Questão 04:
+### **Questão 04:**
 
-$\alpha = 0.05$ 
-
-$H_{0}: p \ge 0.50$
-
-$H_{1}: p < 0.50$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: p \ge 0.50\\ H_{1}: p < 0.50" title="\large 4" />
 
 **Código :**
 ~~~r
@@ -138,13 +124,9 @@ $H_{1}: p < 0.50$
 
 ~~~
 
-### Questão 05:
+### **Questão 05:**
 
-$\alpha = 0.05$ 
-
-$H_{0}: p = 0.01$
-
-$H_{1}: p \ne 0.01$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: p = 0.01\\ H_{1}: p \ne 0.01" title="\large 5" />
 
 **Código :**
 ~~~r
@@ -166,11 +148,9 @@ $H_{1}: p \ne 0.01$
 
 ~~~
 
-### Questão 06:
+### **Questão 06:**
 
-$\alpha = 0.05$ 
-
-$H_{0}: \mu_{x} = \mu_{y}$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \mu_{x} = \mu_{y}" title="\large 6" />
 
 **Código :**
 ~~~r
@@ -200,11 +180,9 @@ mean of x mean of y
 
 ~~~
 
-### Questão 07: **
+### **Questão 07:** **
 
-$\alpha = 0.05$ 
-
-$H_{0}: \mu_{y} \ge \mu_{x}$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \mu_{y} \ge \mu_{x}" title="\large 7" />
 
 **Código :**
 ~~~r
@@ -240,11 +218,9 @@ prop 1 prop 2
 
 ~~~
 
-### Questão 08:
+### **Questão 08:**
 
-$\alpha = 0.1$ 
-
-$H_{0}: \mu_{x} = \mu_{y}$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.1 \\ H_{0}: \mu_{x} = \mu_{y}" title="\large 8" />
 
 **Código :**
 ~~~r
@@ -275,11 +251,9 @@ mean of x mean of y
 
 ~~~
 
-### Questão 09:
+### **Questão 09:**
 
-$\alpha = 0.05$ 
-
-$H_{0}: \mu_{x} = \mu_{y}$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \mu_{x} = \mu_{y}" title="\large 9" />
 
 **Código :**
 ~~~r
@@ -313,13 +287,9 @@ prop 1 prop 2
 
 ~~~
 
-### Questão 10:
+### **Questão 10:**
 
-$\alpha = 0.05$ 
-
-$H_{0}:$ Gênero é independente da confiança na Polícia
-
-$H_{1}:$ Gênero não é independente da confiança na Polícia
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \text{G\^enero \'e independente da confian\c{c}a na Pol\'icia }\\ H_{1}: \text{G\^enero n\~ao \'e independente da confian\c{c}a na Pol\'icia }" title="\large 10" />
 
 **Código :**
 ~~~r
@@ -349,13 +319,9 @@ X-squared = 7.2997, df = 2, p-value = 0.02599
 
 ~~~
 
-### Questão 11:
+### **Questão 11:**
 
-$\alpha = 0.05$ 
-
-$H_{0}:$ Opnião sobre o produto é independente do número de tentativas
-
-$H_{1}:$ Opnião sobre o produto não é independente do número de tentativas
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \text{Opni\~ao sobre o produto \'e independente do n\'umero de tentativas}\\ H_{1}: \text{Opni\~ao sobre o produto  n\~ao \'e independente do n\'umero de tentativas}" title="\large 11" />
 
 **Código :**
 ~~~r
@@ -387,7 +353,9 @@ X-squared = 26.288, df = 4, p-value = 2.768e-05
 
 ~~~
 
-### Questão 12:
+### **Questão 12:**
+
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \text{O tratamento \'e independente da Rea\c{c}\~ao}\\ H_{1}: \text{O tratamento n\~ao \'e independente da Rea\c{c}\~ao}" title="\large 12" />
 
 $\alpha = 0.05$ 
 
@@ -422,13 +390,9 @@ X-squared = 0.90687, df = 1, p-value = 0.3409
 
 ~~~
 
-### Questão 13:
+### **Questão 13:**
 
-$\alpha = 0.01$ 
-
-$H_{0}:$ $\mu_{wf} \ge \mu_{f}$
-
-$H_{1}:$ $\mu_{wf} < \mu_{f}$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.01 \\ H_{0}: \mu_{wf} \ge \mu_{f}\\ H_{1}: \mu_{wf} < \mu_{f}" title="\large 13" />
 
 **Código :**
 ~~~r
@@ -459,13 +423,9 @@ mean of x mean of y
 
 ~~~
 
-### Questão 14:
+### **Questão 14:**
 
-$\alpha = 0.01$ 
-
-$H_{0}:$ $\mu_{after} \le \mu_{before}$
-
-$H_{1}:$ $\mu_{after} > \mu_{before}$
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.01 \\ H_{0}: \mu_{after} \le \mu_{before}\\ H_{1}: \mu_{after} > \mu_{before}" title="\large 14" />
 
 **Código :**
 ~~~r
