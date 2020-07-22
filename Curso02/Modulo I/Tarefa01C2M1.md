@@ -357,12 +357,6 @@ X-squared = 26.288, df = 4, p-value = 2.768e-05
 
 <img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \text{O tratamento \'e independente da Rea\c{c}\~ao}\\ H_{1}: \text{O tratamento n\~ao \'e independente da Rea\c{c}\~ao}" title="\large 12" />
 
-$\alpha = 0.05$ 
-
-$H_{0}:$ O tratamento é independente da Reação
-
-$H_{1}:$ O tratamento não é independente da Reação
-
 **Código :**
 ~~~r
 > alpha = 0.05
