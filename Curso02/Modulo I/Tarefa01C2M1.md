@@ -51,7 +51,7 @@ mean of x
 
 **Analise :**
 ~~~
-
+Rejeita-se a hipótese nula, a um nível de significância de 5%, de que a média populacional é inferior a 42.
 ~~~
 
 ### **Questão 02:**
@@ -66,13 +66,29 @@ mean of x
 > mu = 1200
 > 
 > q2th <- z.test(amos,mu,sd(amos),alternative = 'less',conf.level = 1 - alpha)
+Error in z.test(amos, mu, sd(amos), alternative = "less", conf.level = 1 -  : 
+  could not find function "z.test"
+> q2th
+
+	One Sample z-test
+
+data:  amos
+z = -1.9987, n = 16.000, Std. Dev. = 97.562, Std. Dev. of the sample
+mean = 24.390, p-value = 0.02282
+alternative hypothesis: true mean is less than 1200
+90 percent confidence interval:
+     -Inf 1182.508
+sample estimates:
+mean of amos 
+     1151.25 
+
 > q2th$p.value < alpha # True
 [1] TRUE
 ~~~
 
 **Analise :**
 ~~~
-
+Rejeita-se a hipótese nula, a um nível de significância de 10%, de que a média populacional do tempo de vida das lampadas da marca X é superior a 1200.
 ~~~
 
 ### **Questão 03:**
@@ -88,13 +104,26 @@ mean of x
 > mu = 5
 > 
 > q3th <- t.test(amos,conf.level = 1-alpha,alternative = 'less',mu=mu)
+> q3th
+
+	One Sample t-test
+
+data:  amos
+t = 0.6802, df = 29, p-value = 0.7491
+alternative hypothesis: true mean is less than 5
+95 percent confidence interval:
+     -Inf 8.264787
+sample estimates:
+mean of x 
+ 5.933333 
+
 > q3th$p.value < alpha # False
 [1] FALSE
 ~~~
 
 **Analise :**
 ~~~
-
+Não rejeita-se a hipótese nula, a um nível de significância de 5%, de que o tempo médio de reação após a utilização desse medicamento é superior ou igual a 5.
 ~~~
 
 ### **Questão 04:**
@@ -113,6 +142,21 @@ mean of x
 > q4th <- z.test(amos,mu=p,stde=sd(amos),conf.level = 1-alpha,
 +                alternative = 'less')
 > 
+> q4th
+
+	One Sample z-test
+
+data:  amos
+z = 5.9892, n = 703.000000, Std. Dev. = 0.488043, Std. Dev. of the
+sample mean = 0.018407, p-value = 1
+alternative hypothesis: true mean is less than 0.5
+95 percent confidence interval:
+      -Inf 0.6405184
+sample estimates:
+mean of amos 
+   0.6102418 
+
+> 
 > # Estatistica do teste
 > q4th$statistic
        z 
@@ -121,7 +165,7 @@ mean of x
 
 **Analise :**
 ~~~
-
+Considerando um nível de significância de 5%, a estatística do teste é de 5.99 aproximadamente. Não rejeitamos a hipótese de que a proporção de trabalhadores encontraram emprego através de uma rede amigos é superior a 61%. 
 ~~~
 
 ### **Questão 05:**
@@ -138,14 +182,27 @@ mean of x
 > amos <- c(rep(1,round(n*phat)), rep(0,n*(1-phat)))
 > 
 > q5th <- z.test(amos,mu=p,stde=sd(amos),conf.level = 1-alpha)
-> 
+> q5th
+
+	One Sample z-test
+
+data:  amos
+z = 1.7262, n = 1.2340e+03, Std. Dev. = 1.2632e-01, Std. Dev. of the
+sample mean = 3.5961e-03, p-value = 0.08432
+alternative hypothesis: true mean is not equal to 0.01
+95 percent confidence interval:
+ 0.009159296 0.023255615
+sample estimates:
+mean of amos 
+  0.01620746 
+
 > q5th$p.value < alpha # False
 [1] FALSE
 ~~~
 
 **Analise :**
 ~~~
-
+Não rejeita-se a hipótese nula, a um nivel de significância de 5%, de que 1% das vendas é cobrado em excesso, sendo no minimo 0.9% e no maximo 2.32%, a um nível de confiança de 95%, a verdadeira proporção de vendas cobrada em excesso.
 ~~~
 
 ### **Questão 06:**
@@ -177,12 +234,12 @@ mean of x mean of y
 
 **Analise :**
 ~~~
-
+Não rejeita-se a hipótese nula, a um nível de significância 5%, de que as peças produzidas pelas maquinas A e B, possuem a mesma homogeneidade quanto à resistência à tensão.
 ~~~
 
 ### **Questão 07:** **
 
-<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \mu_{y} \ge \mu_{x}" title="\large 7" />
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: p_{y} \ge p_{x}" title="\large 7" />
 
 **Código :**
 ~~~r
@@ -215,7 +272,7 @@ prop 1 prop 2
 
 **Analise :**
 ~~~
-
+Não rejeita-se a hipotese nula, a um nível de significância de 5%, de que a proporção dos motoristas adolescentes é maior do que a porcentagem dos motoristas adultos. 
 ~~~
 
 ### **Questão 08:**
@@ -248,12 +305,12 @@ mean of x mean of y
 
 **Analise :**
 ~~~
-
+Não rejeita-se a hipótese nula, a um nível de confiança de 10%, de que o desempenho médio dos dois analistas, quanto a precisão na análise da substância que contém carbono, possui igualdade.
 ~~~
 
 ### **Questão 09:**
 
-<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: \mu_{x} = \mu_{y}" title="\large 9" />
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: p_{x} = p_{y}" title="\large 9" />
 
 **Código :**
 ~~~r
@@ -284,7 +341,7 @@ prop 1 prop 2
 
 **Analise :**
 ~~~
-
+Não rejeita-se a hipótese nula, a um nível de significância de 5%, de que os dois escritórios não apresentam diferença significativa entre suas taxas de aprovação.
 ~~~
 
 ### **Questão 10:**
@@ -316,7 +373,7 @@ X-squared = 7.2997, df = 2, p-value = 0.02599
 
 **Analise :**
 ~~~
-
+Rejeita-se a hipótese nula, a um nivel de significância de 5%, de que o gênero é independente da confiança que o povo deposita na polícia, ou seja, de que não há restrições entre as variáveis.
 ~~~
 
 ### **Questão 11:**
@@ -350,7 +407,7 @@ X-squared = 26.288, df = 4, p-value = 2.768e-05
 
 **Analise :**
 ~~~
-
+Rejeita-se a hipótese nula, a um nivel de significância de 5%, de que a opnião do produto sobre o produto é indenpendente do número de tentativas, ou seja, de que não existe relação entre a resposta e o número de tentativas.
 ~~~
 
 ### **Questão 12:**
@@ -381,7 +438,7 @@ X-squared = 0.90687, df = 1, p-value = 0.3409
 
 **Analise :**
 ~~~
-
+Não rejeita-se a hipótese nula, a um nível de significância de 5%, de que o tratamento independe da reação, ou seja, há evidências suficientes para afirmar de que o tratamento independe da reação. 
 ~~~
 
 ### **Questão 13:**
@@ -414,7 +471,7 @@ mean of x mean of y
 
 **Analise :**
 ~~~
-
+Não rejeita-se a hipóse nula, a um nível de significância de 1%, de que a média dos preços é igual para ambos Whole Foods Market e Fairway, ou seja, não há evidências sucificientes para afirmar de que a média dos preços é mais alta no Whole Foods Market do que no Fairway.
 ~~~
 
 ### **Questão 14:**
@@ -449,5 +506,5 @@ mean of x mean of y
 
 **Analise :**
 ~~~
-
+Não rejeita-se a hipótese nula, a um nível de significância de 1%, de que não houve diminuição da temperatura dos indivíduos, ou seja, não há evidências suficiente para afirmar que houve diminuição da temperatura dos indivíduos.
 ~~~
