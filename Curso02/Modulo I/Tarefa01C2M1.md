@@ -51,7 +51,7 @@ mean of x
 
 **Analise :**
 ~~~
-Rejeita-se a hipótese nula, a um nível de significância de 5%, de que a média populacional é inferior a 42.
+Rejeita-se a hipótese nula, a um nível de significância de 5%, de que a média populacional é inferior a 42. Verifica-se também que, a um nível de confiança de 95%, a verdeira média populacional está entre 
 ~~~
 
 ### **Questão 02:**
@@ -449,7 +449,7 @@ Não rejeita-se a hipótese nula, a um nível de significância de 5%, de que o 
 ~~~r
 > alpha = 0.01
 > wf <- c(2.19,2.39,2.,7.99,1.98,4.99,1.79,1.69,2.19,1.99)
-> f <- c(1.35,1.69,2.49,6.99,1.29,3.69,1.33,1.49,1.49,1.59)
+> f <- c(1.35,1.69,2.49,5.99,1.29,3.69,1.33,1.49,1.49,1.59)
 > 
 > q13th <- t.test(wf,f,conf.level = 1 - alpha,alternative='less')
 > q13th
@@ -457,13 +457,13 @@ Não rejeita-se a hipótese nula, a um nível de significância de 5%, de que o 
 	Welch Two Sample t-test
 
 data:  wf and f
-t = 0.67873, df = 17.755, p-value = 0.747
+t = 0.85206, df = 16.681, p-value = 0.7969
 alternative hypothesis: true difference in means is less than 0
 99 percent confidence interval:
-     -Inf 2.764016
+     -Inf 2.732605
 sample estimates:
 mean of x mean of y 
-     2.92      2.34 
+     2.92      2.24 
 
 > q13th$p.value < alpha # False, não rejeita h0
 [1] FALSE

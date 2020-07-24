@@ -11,8 +11,9 @@ alpha = 0.05
 mu = 42
 
 q1th <- t.test(amos,conf.level = 1-alpha,alternative='great',mu=mu)
-q1th
 q1th$p.value < alpha # True
+q1th
+interval_estimate1(amos, sigma = -1, alpha = alpha)
 
 # Questao 02
 amos <- c(1200,1180,1100,1120,900,1160,1250,1140,
@@ -23,6 +24,7 @@ mu = 1200
 q2th <- z.test(amos,mu,sd(amos),alternative = 'less',conf.level = 1 - alpha)
 q2th
 q2th$p.value < alpha # True
+interval_estimate1(amos, sigma = sd(amos),alpha = alpha)
 
 # Questao 03
 amos <- c(4.0,4.1,4.7,3.5,4.2,3.3,6.1,4.8,3.7,5.8,4.7,
@@ -34,6 +36,8 @@ mu = 5
 q3th <- t.test(amos,conf.level = 1-alpha,alternative = 'less',mu=mu)
 q3th
 q3th$p.value < alpha # False
+interval_estimate1(amos, sigma = -1, alpha = alpha)
+
 library(TeachingDemos)
 # Questao 04
 n  = 703
@@ -43,10 +47,10 @@ p = 0.5
 alpha = 0.05
 amos <- c(rep(1,round(n*phat)), rep(0,n*(1-phat)))
 
-q4th <- z.test(amos,mu=p,stde=sd(amos),conf.level = 1-alpha,
+q4th <- z.test(amos,mu=p,stdev=sd(amos),conf.level = 1-alpha,
                alternative = 'less')
-
 q4th
+interval_estimate1(amos, sigma = sd(amos),alpha = alpha)
 
 # Estatistica do teste
 q4th$statistic
@@ -62,6 +66,7 @@ amos <- c(rep(1,round(n*phat)), rep(0,n*(1-phat)))
 q5th <- z.test(amos,mu=p,stde=sd(amos),conf.level = 1-alpha)
 q5th
 q5th$p.value < alpha # False
+interval_estimate1(amos, sigma = sd(amos),alpha = alpha)
 
 # Questao 06
 x <- c(145,127,136,142,141,137)
@@ -152,7 +157,7 @@ q12chq$p.value < alpha # False, não rejeita h0
 # Questão 13
 alpha = 0.01
 wf <- c(2.19,2.39,2.,7.99,1.98,4.99,1.79,1.69,2.19,1.99)
-f <- c(1.35,1.69,2.49,6.99,1.29,3.69,1.33,1.49,1.49,1.59)
+f <- c(1.35,1.69,2.49,5.99,1.29,3.69,1.33,1.49,1.49,1.59)
 
 q13th <- t.test(wf,f,conf.level = 1 - alpha,alternative='less')
 q13th
