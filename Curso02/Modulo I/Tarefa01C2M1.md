@@ -99,7 +99,7 @@ Rejeita-se a hipótese nula, a um nível de significância de 10%, de que a méd
 ~~~r
 > amos <- c(4.0,4.1,4.7,3.5,4.2,3.3,6.1,4.8,3.7,5.8,4.7,
 +           6.3,5.4,3.8,5.7,4.4,4.8,3.9,4.9,5.3,4.6,3.9,
-+           45.5,4.7,5.1,3.6,4.1,5.3,3.5,4.3)
++           5.5,4.7,5.1,3.6,4.1,5.3,3.5,4.3)
 > alpha = 0.05
 > mu = 5
 > 
@@ -109,21 +109,21 @@ Rejeita-se a hipótese nula, a um nível de significância de 10%, de que a méd
 	One Sample t-test
 
 data:  amos
-t = 0.6802, df = 29, p-value = 0.7491
+t = -2.6814, df = 29, p-value = 0.005984
 alternative hypothesis: true mean is less than 5
 95 percent confidence interval:
-     -Inf 8.264787
+     -Inf 4.853466
 sample estimates:
 mean of x 
- 5.933333 
+      4.6 
 
 > q3th$p.value < alpha # False
-[1] FALSE
+[1] TRUE
 ~~~
 
 **Analise :**
 ~~~
-Não rejeita-se a hipótese nula, a um nível de significância de 5%, de que o tempo médio de reação após a utilização desse medicamento é superior ou igual a 5.
+Rejeita-se a hipótese nula, a um nível de significância de 5%, de que o tempo médio de reação após a utilização desse medicamento é superior ou igual a 5.
 ~~~
 
 ### **Questão 04:**
@@ -165,7 +165,7 @@ mean of amos
 
 **Analise :**
 ~~~
-Considerando um nível de significância de 5%, a estatística do teste é de 5.99 aproximadamente. Não rejeitamos a hipótese de que a proporção de trabalhadores encontraram emprego através de uma rede amigos é superior a 61%. 
+Considerando um nível de significância de 5%, a estatística do teste é de 5.99 aproximadamente. Não rejeitamos a hipótese de que a proporção de trabalhadores que encontraram emprego através de uma rede amigos é superior a 50%. 
 ~~~
 
 ### **Questão 05:**
@@ -202,7 +202,7 @@ mean of amos
 
 **Analise :**
 ~~~
-Não rejeita-se a hipótese nula, a um nivel de significância de 5%, de que 1% das vendas é cobrado em excesso, sendo no minimo 0.9% e no maximo 2.32%, a um nível de confiança de 95%, a verdadeira proporção de vendas cobrada em excesso.
+Não rejeita-se a hipótese nula, a um nivel de significância de 5%, de que 1% das vendas é cobrado em excesso. Considerando um nível de confiança de 95%, a verdadeira proporção de vendas cobrada em excesso esta entre no minimo 0.9% e no maximo 2.32%.
 ~~~
 
 ### **Questão 06:**
@@ -237,7 +237,7 @@ mean of x mean of y
 Não rejeita-se a hipótese nula, a um nível de significância 5%, de que as peças produzidas pelas maquinas A e B, possuem a mesma homogeneidade quanto à resistência à tensão.
 ~~~
 
-### **Questão 07:** **
+### **Questão 07:** 
 
 <img src="https://latex.codecogs.com/svg.latex?\large&space;\\ \alpha = 0.05 \\ H_{0}: p_{y} \ge p_{x}" title="\large 7" />
 
@@ -272,7 +272,7 @@ prop 1 prop 2
 
 **Analise :**
 ~~~
-Não rejeita-se a hipotese nula, a um nível de significância de 5%, de que a proporção dos motoristas adolescentes é maior do que a porcentagem dos motoristas adultos. 
+Não rejeita-se a hipotese nula, a um nível de significância de 5%, de que a proporção dos motoristas adolescentes é maior do que a proporção dos motoristas adultos. 
 ~~~
 
 ### **Questão 08:**
@@ -305,7 +305,7 @@ mean of x mean of y
 
 **Analise :**
 ~~~
-Não rejeita-se a hipótese nula, a um nível de confiança de 10%, de que o desempenho médio dos dois analistas, quanto a precisão na análise da substância que contém carbono, possui igualdade.
+Não rejeita-se a hipótese nula, a um nível de significância de 10%, de que o desempenho médio dos dois analistas, quanto a precisão na análise da substância que contém carbono, possui igualdade.
 ~~~
 
 ### **Questão 09:**
@@ -471,7 +471,7 @@ mean of x mean of y
 
 **Analise :**
 ~~~
-Não rejeita-se a hipóse nula, a um nível de significância de 1%, de que a média dos preços é igual para ambos Whole Foods Market e Fairway, ou seja, não há evidências sucificientes para afirmar de que a média dos preços é mais alta no Whole Foods Market do que no Fairway.
+Não rejeita-se a hipóse nula, a um nível de significância de 1%, de que a média dos preços do Whole Foods Market é maior do que o Fairway para ambos Whole Foods Market e Fairway.
 ~~~
 
 ### **Questão 14:**
@@ -506,5 +506,5 @@ mean of x mean of y
 
 **Analise :**
 ~~~
-Não rejeita-se a hipótese nula, a um nível de significância de 1%, de que não houve diminuição da temperatura dos indivíduos, ou seja, não há evidências suficiente para afirmar que houve diminuição da temperatura dos indivíduos.
+Não rejeita-se a hipótese nula, a um nível de significância de 1%, de que houve diminuição da temperatura dos indivíduos, ou seja, não há evidências suficiente para afirmar que não houve diminuição da temperatura dos indivíduos.
 ~~~
