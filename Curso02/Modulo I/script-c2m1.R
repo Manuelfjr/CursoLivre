@@ -53,7 +53,7 @@ amos <- c(rep(1,round(n*phat)), rep(0,n*(1-phat)))
 q4th <- z.test(amos,mu=p,stdev=sd(amos),conf.level = 1-alpha,
                alternative = 'less')
 q4th
-interval_estimate1(amos, sigma = sd(amos),alpha = alpha)
+interval_estimate1(amos, sd(amos), alpha = 0.05)
 
 # Estatistica do teste
 q4th$statistic
@@ -78,6 +78,7 @@ alpha = 0.05
 q6th <- t.test(x,y,conf.level = 1 - alpha)
 q6th
 q6th$p.value < alpha # False
+q6th$conf.int
 
 # Questao 07
 n1 = 200
@@ -92,6 +93,7 @@ q7th <- prop.test(x=c(y, x), n=c(n2, n1),
 q7th
 
 q7th$p.value < alpha # False
+q7th$conf.int
 
 # Questao 08
 X <- c(-10,16,-8,9,5,-5,5,-11,25,25)
@@ -101,6 +103,7 @@ alpha = 0.1
 q8th <- t.test(X,Y,conf.level = 1-alpha)
 q8th
 q8th$p.value < alpha
+q8th$conf.int
 
 # Questao 09
 n1 = 100
@@ -113,6 +116,7 @@ q9th <- prop.test(x=c(x, y), n=c(n1, n2),
                   conf.level = 1 - alpha)
 q9th
 q9th$p.value < alpha # False
+q9th$conf.int
 
 # Questao 10
 alpha = 0.05
@@ -165,6 +169,7 @@ f <- c(1.35,1.69,2.49,5.99,1.29,3.69,1.33,1.49,1.49,1.59)
 q13th <- t.test(wf,f,conf.level = 1 - alpha,alternative='less')
 q13th
 q13th$p.value < alpha # False, não rejeita h0
+q13th$conf.int
 
 # Questao 14
 alpha = 0.01

@@ -165,6 +165,11 @@ mean of amos
 > interval_estimate1(amos, sd(amos), alpha = 0.05)
        mean  df        a         b
 1 0.6102418 703 0.574165 0.6463186
+> 
+> # Estatistica do teste
+> q4th$statistic
+       z 
+5.989166 
 ~~~
 
 **Analise :**
