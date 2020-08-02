@@ -32,6 +32,8 @@ library(TeachingDemos)
 > mu = 42
 > 
 > q1th <- t.test(amos,conf.level = 1-alpha,alternative='great',mu=mu)
+> q1th$p.value < alpha # True
+[1] TRUE
 > q1th
 
 	One Sample t-test
@@ -45,13 +47,14 @@ sample estimates:
 mean of x 
  43.07778 
 
-> q1th$p.value < alpha # True
-[1] TRUE
+> interval_estimate1(amos, sd(amos), alpha = alpha)
+      mean df        a        b
+1 43.07778 36 42.41289 43.74267
 ~~~
 
 **Analise :**
 ~~~
-Rejeita-se a hipótese nula, a um nível de significância de 5%, de que a média populacional é inferior a 42. Verifica-se também que, a um nível de confiança de 95%, a verdeira média populacional está entre 
+Rejeita-se a hipótese nula, a um nível de significância de 5%, de que a média populacional é inferior a 42. Verifica-se também que, a um nível de confiança de 95%, a verdeira média populacional está entre 42 e 44.
 ~~~
 
 ### **Questão 02:**
@@ -66,8 +69,6 @@ Rejeita-se a hipótese nula, a um nível de significância de 5%, de que a médi
 > mu = 1200
 > 
 > q2th <- z.test(amos,mu,sd(amos),alternative = 'less',conf.level = 1 - alpha)
-Error in z.test(amos, mu, sd(amos), alternative = "less", conf.level = 1 -  : 
-  could not find function "z.test"
 > q2th
 
 	One Sample z-test
@@ -84,11 +85,14 @@ mean of amos
 
 > q2th$p.value < alpha # True
 [1] TRUE
+> interval_estimate1(amos, sd(amos), alpha = alpha)
+     mean df        a        b
+1 1151.25 16 1111.131 1191.369
 ~~~
 
 **Analise :**
 ~~~
-Rejeita-se a hipótese nula, a um nível de significância de 10%, de que a média populacional do tempo de vida das lampadas da marca X é superior a 1200.
+Rejeita-se a hipótese nula, a um nível de significância de 10%, de que a média populacional do tempo de vida das lampadas da marca X é superior a 1200. Verifica-se também que, a um nível de confiança de 90%, o tempo de vida médio das lâmpadas da marca X esta entre 1111 e 1191.
 ~~~
 
 ### **Questão 03:**
@@ -119,11 +123,14 @@ mean of x
 
 > q3th$p.value < alpha # False
 [1] TRUE
+> interval_estimate1(amos, sigma = -1, alpha = alpha)
+  mean df        a        b
+1  4.6 29 4.294905 4.905095
 ~~~
 
 **Analise :**
 ~~~
-Rejeita-se a hipótese nula, a um nível de significância de 5%, de que o tempo médio de reação após a utilização desse medicamento é superior ou igual a 5.
+Rejeita-se a hipótese nula, a um nível de significância de 5%, de que o tempo médio de reação após a utilização desse medicamento é superior ou igual a 5. Verifica-se também que, a um nível de confiança de 95%, o tempo médio de reação está entre 4 e 5.
 ~~~
 
 ### **Questão 04:**
@@ -139,9 +146,8 @@ Rejeita-se a hipótese nula, a um nível de significância de 5%, de que o tempo
 > alpha = 0.05
 > amos <- c(rep(1,round(n*phat)), rep(0,n*(1-phat)))
 > 
-> q4th <- z.test(amos,mu=p,stde=sd(amos),conf.level = 1-alpha,
+> q4th <- z.test(amos,mu=p,stdev=sd(amos),conf.level = 1-alpha,
 +                alternative = 'less')
-> 
 > q4th
 
 	One Sample z-test
@@ -156,16 +162,14 @@ sample estimates:
 mean of amos 
    0.6102418 
 
-> 
-> # Estatistica do teste
-> q4th$statistic
-       z 
-5.989166 
+> interval_estimate1(amos, sd(amos), alpha = 0.05)
+       mean  df        a         b
+1 0.6102418 703 0.574165 0.6463186
 ~~~
 
 **Analise :**
 ~~~
-Considerando um nível de significância de 5%, a estatística do teste é de 5.99 aproximadamente. Não rejeitamos a hipótese de que a proporção de trabalhadores que encontraram emprego através de uma rede amigos é superior a 50%. 
+Considerando um nível de significância de 5%, a estatística do teste é de 5.99 aproximadamente. Não rejeitamos a hipótese de que a proporção de trabalhadores que encontraram emprego através de uma rede amigos é superior a 50%, sendo a verdadeira proporção de trabalhadores que conseguiram emprego por uma rede de amigos esta entre 0.57 e 0.65, a um nível de confiança de  95%.
 ~~~
 
 ### **Questão 05:**
@@ -198,11 +202,14 @@ mean of amos
 
 > q5th$p.value < alpha # False
 [1] FALSE
+> interval_estimate1(amos, sigma = sd(amos),alpha = alpha)
+        mean   df           a          b
+1 0.01620746 1234 0.009159296 0.02325562
 ~~~
 
 **Analise :**
 ~~~
-Não rejeita-se a hipótese nula, a um nivel de significância de 5%, de que 1% das vendas é cobrado em excesso. Considerando um nível de confiança de 95%, a verdadeira proporção de vendas cobrada em excesso esta entre no minimo 0.9% e no maximo 2.32%.
+Não rejeita-se a hipótese nula, a um nivel de significância de 5%, de que 1% das vendas é cobrado em excesso. Considerando um nível de confiança de 95%, a verdadeira proporção de vendas cobrada em excesso esta entre no minímo 0.9% e no maximo 2.32%.
 ~~~
 
 ### **Questão 06:**
@@ -230,6 +237,10 @@ mean of x mean of y
 
 > q6th$p.value < alpha # False
 [1] FALSE
+> q6th$conf.int
+[1] -5.815291 10.148624
+attr(,"conf.level")
+[1] 0.95
 ~~~
 
 **Analise :**
@@ -268,6 +279,10 @@ prop 1 prop 2
 > 
 > q7th$p.value < alpha # False
 [1] FALSE
+> q7th$conf.int
+[1] -1.0000000  0.3055035
+attr(,"conf.level")
+[1] 0.95
 ~~~
 
 **Analise :**
@@ -301,6 +316,10 @@ mean of x mean of y
 
 > q8th$p.value < alpha
 [1] FALSE
+> q8th$conf.int
+[1] -10.28768  10.48768
+attr(,"conf.level")
+[1] 0.9
 ~~~
 
 **Analise :**
@@ -337,6 +356,10 @@ prop 1 prop 2
 
 > q9th$p.value < alpha # False
 [1] FALSE
+> q9th$conf.int
+[1] -0.12937825  0.06937825
+attr(,"conf.level")
+[1] 0.95
 ~~~
 
 **Analise :**

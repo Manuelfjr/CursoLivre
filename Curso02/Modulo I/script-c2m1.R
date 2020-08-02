@@ -1,7 +1,10 @@
 # Curso II ----------------------------------------------------------------
 # Modulo I ----------------------------------------------------------------
-# Tarefa 01
 library(TeachingDemos)
+library(stats)
+library(OneTwoSamples)
+# Tarefa 01
+
 # Questão 1
 amos <- c(40.1,41.2,43.4,43.9,45.0,40.7,45.5,42.6,39.1,43.1,
           44.8,45.5,43.9,44.1,42.3,41.5,45.8,42.6,40.4,45.2,
@@ -13,7 +16,7 @@ mu = 42
 q1th <- t.test(amos,conf.level = 1-alpha,alternative='great',mu=mu)
 q1th$p.value < alpha # True
 q1th
-interval_estimate1(amos, sigma = -1, alpha = alpha)
+interval_estimate1(amos, sd(amos), alpha = alpha)
 
 # Questao 02
 amos <- c(1200,1180,1100,1120,900,1160,1250,1140,
@@ -24,7 +27,7 @@ mu = 1200
 q2th <- z.test(amos,mu,sd(amos),alternative = 'less',conf.level = 1 - alpha)
 q2th
 q2th$p.value < alpha # True
-interval_estimate1(amos, sigma = sd(amos),alpha = alpha)
+interval_estimate1(amos, sd(amos), alpha = alpha)
 
 # Questao 03
 amos <- c(4.0,4.1,4.7,3.5,4.2,3.3,6.1,4.8,3.7,5.8,4.7,
