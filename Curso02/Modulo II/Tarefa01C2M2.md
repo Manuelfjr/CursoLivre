@@ -23,44 +23,67 @@ attach(trees)
 > grid()
 > title('Volume ~ Girth')
 ~~~
-![1.0]()
+![1.0](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso02/imagens/Q01AC2M2.png)
 
 **B)** Qual o grau de correlação linear entre as variáveis?
 ~~~r
 > cor(Girth,Volume)
 [1] 0.9671194
 ~~~
-![1]()
 
 **C)** Qual a conclusão do teste para o coeficiente de correlação? Justifique utilizando o p-valor.
 ~~~r
+> cor.test(Volume, Girth)
 
+	Pearson s product-moment correlation
+
+data:  Volume and Girth
+t = 20.478, df = 29, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9322519 0.9841887
+sample estimates:
+      cor 
+0.9671194 
 ~~~
-![1]()
 
 **D)** Ajuste um modelo de regressão linear simples.
 ~~~r
+> gvmodel <- lm(Volume ~ Girth)
+> gvmodel
 
+Call:
+lm(formula = Volume ~ Girth)
+
+Coefficients:
+(Intercept)        Girth  
+    -36.943        5.066 
 ~~~
-![1]()
 
 **E)** Qual a variável resposta (interesse) e a regressora (explicativa)?
-~~~r
-
 ~~~
-![1]()
+Para esse modelo, consideremos que a variavel explicativa é
+o diâmetro da arvore e a variável resposta é o volume da 
+arvore.
+~~~
 
 **F)** Quais foram os valores estimados dos coeficientes de regressão (o intercepto e a inclinação)? Como é possível interpretá-los?
 ~~~r
+> coefs <- gvmodel$coefficients
+> coefs   
+(Intercept)       Girth 
+ -36.943459    5.065856
+~~~
+~~~
 
 ~~~
-![1]()
 
 **G)** Trace a reta de estimada no gráfico.
+
 ~~~r
 
 ~~~
-![1]()
+![1.1]()
 
 **H)** Qual o teste que utilizamos para verificar se a relação de regressão significante? Faça uma conclusão sobre o teste utilizando o respectivo p-valor.
 ~~~r
