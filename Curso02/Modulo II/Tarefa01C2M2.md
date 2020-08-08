@@ -80,25 +80,31 @@ arvore.
 
 **G)** Trace a reta de estimada no gráfico.
 
-~~~r
+<img src="https://latex.codecogs.com/svg.latex?\large&space;\hat{Y} = -36.943459 + 5.065856 \cdot X" title="\large 1" />
 
+~~~r
+> plot(Girth, Volume)
+> abline(gvmodel, col="gray")
+> grid()
+> title('Volume ~ Girth')
 ~~~
-![1.1]()
+![1.1](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso02/imagens/Q01GC2M2.png)
 
 **H)** Qual o teste que utilizamos para verificar se a relação de regressão significante? Faça uma conclusão sobre o teste utilizando o respectivo p-valor.
 ~~~r
 
 ~~~
-![1]()
 
 **I)** Qual a estatística utilizada para verificarmos se modelo tem um alto poder explicativo para variável resposta? Qual o valor desta estatística neste ajuste? Interprete este valor.
 ~~~r
 
 ~~~
-![1]()
 
 **J)** Qual o volume médio previsto para uma árvore com o diâmetro de 13 polegadas?
 ~~~r
-
+> predict(gvmodel,newdata=data.frame(Girth=c(13)),
++         interval="prediction")
+       fit      lwr      upr
+1 28.91267 20.07634 37.74901
 ~~~
-![1]()
+

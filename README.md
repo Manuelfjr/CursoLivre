@@ -36,3 +36,28 @@ Code: script em .R das ativiades respectivas ao modulo
 **[Libs](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/Modulo%20II/libs)**
 
 ### [Imagens](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/imagens)
+
+## [Curso II](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02)
+
+### [Modulo I](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20I)
+**[Code](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20I/code)**
+
+**[Data](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20I/data)**
+
+**[Libs](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20I/libs)**
+
+### [Modulo II](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20II)
+**[Code](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20II/code)**
+
+**[Data](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20II/data)**
+
+**[Libs](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20II/libs)**
+
+### [Modulo II](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20III)
+**[Code](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20III/code)**
+
+**[Data](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20III/data)**
+
+**[Libs](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20III/libs)**
+
+### [Imagens](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/imagens)
