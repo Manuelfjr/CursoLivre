@@ -19,7 +19,7 @@ Data: Pasta com os dados usados
 Code: script em .R das ativiades respectivas ao modulo
 ~~~
 
-## [Curso I](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01)
+## [Curso 1](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01)
 
 ### [Modulo I](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/Modulo%20I)
 **[Code](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/Modulo%20I/code)**
@@ -37,7 +37,7 @@ Code: script em .R das ativiades respectivas ao modulo
 
 ### [Imagens](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso01/imagens)
 
-## [Curso II](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02)
+## [Curso 2](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02)
 
 ### [Modulo I](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20I)
 **[Code](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20I/code)**
@@ -53,7 +53,7 @@ Code: script em .R das ativiades respectivas ao modulo
 
 **[Libs](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20II/libs)**
 
-### [Modulo II](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20III)
+### [Modulo III](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20III)
 **[Code](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20III/code)**
 
 **[Data](https://github.com/Manuelfjr/CursoLivre/tree/master/Curso02/Modulo%20III/data)**
