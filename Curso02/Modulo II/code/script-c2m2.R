@@ -14,6 +14,7 @@ cor.test(Volume, Girth)
 
 # D)
 gvmodel <- lm(Volume ~ Girth)
+gvmodel
 
 # E)
 # Para esse modelo, consideremos que a variavel explicativa é
@@ -31,6 +32,7 @@ abline(gvmodel, col="gray")
 # H)
 
 # I)
+summary(gvmodel)
 
 # J)
 predict(gvmodel,newdata=data.frame(Girth=c(13)),
