@@ -105,7 +105,7 @@ true        benign malignant -err.-
   -err.-         5         4      9
 ~~~
 
-![1.0](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso02/imagens/Q01AC2M3.png)
+![1.0](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso02/imagens/C2M3.png)
 
 **ppv (Precision) :** 0.95
 
