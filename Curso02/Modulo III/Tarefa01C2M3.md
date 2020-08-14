@@ -196,4 +196,6 @@ DecisionTree  | 0.95| 0.96| 0.94
 KNN           | 0.95| 0.98| 0.95|
 LogisticReg   | 0.92| 1   | 0.94|
 
-
+~~~
+Repare que a logistic regression apresentou uma maior taxa de cobertura, equivalente a 1, consequentemente perde um pouco em sua precisão. Por ser um modelo que mais acerta a classe do seu target, o modelo de Regressão Logistica é o melhor, para esta situação.
+~~~
