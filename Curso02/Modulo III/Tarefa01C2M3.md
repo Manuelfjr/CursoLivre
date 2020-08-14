@@ -104,6 +104,11 @@ true        benign malignant -err.-
   malignant      5        35      5
   -err.-         5         4      9
 ~~~
+**ppv (Precision) :** 0.95
+
+**tpr (Recall):** 0.96
+
+**acc (Acuracy):** 0.94
 
 **K-Nearest Neighbors (KNN)**
 ~~~r
@@ -138,6 +143,12 @@ true        benign malignant -err.-
   -err.-         5         2      7
 ~~~
 
+**ppv (Precision) :** 0.95
+
+**tpr (Recall):** 0.98
+
+**acc (Acuracy):** 0.95
+
 **Logistic Regression**
 ~~~r
 > reg_log_predict <- predict(reg_log_trein, newdata = test)
@@ -170,3 +181,19 @@ true        benign malignant -err.-
   malignant      9        31      9
   -err.-         9         0      9
 ~~~
+**ppv (Precision) :** 0.92
+
+**tpr (Recall):** 1
+
+**acc (Acuracy):** 0.94
+
+-----
+**Todos :**
+
+Modelo\medida | ppv | tpr | acc |
+------------- | --- | --- | --- |
+DecisionTree  | 0.95| 0.96| 0.94
+KNN           | 0.95| 0.98| 0.95|
+LogisticReg   | 0.92| 1   | 0.94|
+
+
