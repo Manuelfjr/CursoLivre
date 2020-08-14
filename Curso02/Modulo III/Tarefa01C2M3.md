@@ -181,11 +181,7 @@ true        benign malignant -err.-
   malignant      9        31      9
   -err.-         9         0      9
 ~~~
-**ppv (Precision) :** 0.92
-
-**tpr (Recall):** 1
-
-**acc (Acuracy):** 0.94
+**ppv (Precision) :** 0.92 \\ **tpr (Recall):** 1 \\ **acc (Acuracy):** 0.94
 
 -----
 **Todos :**
