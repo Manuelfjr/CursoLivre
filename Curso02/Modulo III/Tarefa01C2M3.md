@@ -104,6 +104,9 @@ true        benign malignant -err.-
   malignant      5        35      5
   -err.-         5         4      9
 ~~~
+
+![1.0](![1.1](https://raw.githubusercontent.com/Manuelfjr/CursoLivre/master/Curso02/imagens/Q01AC2M3.png))
+
 **ppv (Precision) :** 0.95
 
 **tpr (Recall):** 0.96
@@ -188,10 +191,10 @@ true        benign malignant -err.-
 
 Modelo\medida | ppv | tpr | acc |
 ------------- | --- | --- | --- |
-DecisionTree  | 0.95| 0.96| 0.94
+DecisionTree  | 0.95| 0.96| 0.94|
 KNN           | 0.95| 0.98| 0.95|
 LogisticReg   | 0.92| 1   | 0.94|
 
 ~~~
-Repare que a logistic regression apresentou uma maior taxa de cobertura, equivalente a 1, consequentemente perde um pouco em sua precisão. Por ser um modelo que mais acerta a classe do seu target, o modelo de Regressão Logistica é o melhor, para esta situação.
+Note que a logistic regression apresentou uma maior taxa de cobertura, equivalente a 1, consequentemente perde um pouco em sua precisão. Por ser um modelo que mais acerta a classe do seu target, o modelo de Regressão Logistica é o melhor, para esta situação.
 ~~~
