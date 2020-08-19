@@ -196,5 +196,5 @@ KNN           | 0.95| 0.98| 0.95|
 LogisticReg   | 0.92| 1   | 0.94|
 
 ~~~
-Note que a logistic regression apresentou uma maior taxa de cobertura, equivalente a 1, consequentemente perde um pouco em sua precisão. Por ser um modelo que mais acerta a classe do seu target, o modelo de Regressão Logistica é o melhor, para esta situação.
+A partir dos resultados acima, é possível identificar que a regressão logística é o melhor modelo para esse problema, apresentando uma taxa de cobertura de 1, consequentemente descontando na precisão do modelo, porém é o modelo que cobre maior taxa de cobertura das classes.
 ~~~
